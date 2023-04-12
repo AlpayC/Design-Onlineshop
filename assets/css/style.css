@@ -11,13 +11,24 @@
     padding:0;
     box-sizing: border-box;
 }
-
+.hamburger{
+    display:none;
+}
 a{
     text-decoration: none; 
     color: var(--textcolor);
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: 1.8rem;
+    font-weight: 600;
     letter-spacing: -1px;
+}
+.bigarticle a, .miniarticles a{
+    background-color: #F4F4F4;
+}
+
+a:hover{
+    filter:opacity(0.6);
+    color: var(--imgbg);
+    transition: ease 0.3s;
 }
 html{
     font-size: 62.5%;
@@ -28,7 +39,9 @@ html{
 img{
     max-width: 100%;
 }
-
+main{
+    margin-bottom: 5rem;
+}
 h1{
     font-weight: 800;
 }
@@ -37,11 +50,15 @@ h2, .pricetag{
     margin-bottom: 1rem;
     font-weight: 700;
 }
+h4{
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
 h3{
     font-size: 1.8rem;
     color: var(--imgbg);
 }
-
 .navlogo{
     display: flex;
     justify-content: space-between;
@@ -59,6 +76,10 @@ nav{
     display: flex;
     justify-content: center;
 }
+.bigarticle{
+    margin-bottom: 8rem;
+    margin-top: 6rem;
+}
 .productinfos{
     display:flex;
     justify-content: space-between;
@@ -69,8 +90,90 @@ nav{
     display: flex;
     justify-content: center;
 }
+.bigpic:hover,.minipic:hover{
+    background-color: #F7F7F7;
+    transition: ease 0.3s;
+}
+
 .miniarticles{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap:4rem;
+}
+footer{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap:3rem;
+    align-items: start;
+    line-height: 3.5rem;
+}
+footer section{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer p{
+    font-size: 1.8rem;
+}
+.italicdontworry{
+    font-style: italic;
+}
+.copyright{
+    font-size: 1.5rem;
+    color: var(--imgbg);
+    justify-self: flex-start;
+}
+footer span{
+    font-weight: 900;
+}
+.txt p:first-of-type{
+    margin-bottom: 20rem;
+}
+.copyright span{
+    padding:0 1rem;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px){
+    html{
+        padding:3rem;
+    }
+    .miniarticles{
+        display:block;
+        margin-bottom: 8rem;
+    }
+    footer{
+        display:block;
+    }
+    footer section{
+        flex-direction: column;
+        margin-bottom: 8rem;
+    }
+    .articlegrid{
+        margin-bottom: 40px;
+
+    }
+    .txt p:first-of-type{
+        margin-bottom: 1px;
+        padding-right: 180px;
+    }
+    nav a{
+        display:none;
+    }
+    nav .hamburger{
+        display: block;
+    }
+    nav .hamburger div{
+        background: black; width: 25px; height: 4px;  
+        margin-left: auto; margin-right: auto;
+        margin:0.3rem;
+        border-radius: 4px;
+    }
+    header{
+        margin-top: 20px;
+    }
+    .bigarticle{
+        margin-top: 0;
+    }
 }
