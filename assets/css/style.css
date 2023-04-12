@@ -1,0 +1,76 @@
+@font-face {
+    font-family: karla;
+    src: url(../fonts/Karla-VariableFont_wght.ttf);
+}
+:root{
+    --textcolor:#323A45;
+    --imgbg: #848484;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none; 
+    color: var(--textcolor);
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+html{
+    font-size: 62.5%;
+    font-family: karla;
+    padding: 30px 120px;
+
+}
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-weight: 800;
+}
+h2, .pricetag{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+h3{
+    font-size: 1.8rem;
+    color: var(--imgbg);
+}
+
+.navlogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    gap:4rem;
+}
+.bigpic{
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.productinfos{
+    display:flex;
+    justify-content: space-between;
+}
+.minipic{
+    background-color: #EEEEEE;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.miniarticles{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:4rem;
+}
