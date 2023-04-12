@@ -47,11 +47,11 @@ h1{
     font-weight: 800;
 }
 h2, .pricetag{
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: 900;
 }
-h4{
+h4, .newsletterbox p{
     font-size: 1.8rem;
     margin-bottom: 4rem;
     font-weight: 700;
@@ -71,36 +71,47 @@ nav{
     justify-content: space-between;
     gap:4rem;
 }
-.bigpic{
-    background-color: #f7f7f7;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-.bigarticle{
-    margin-bottom: 8rem;
-    margin-top: 6rem;
-}
-.productinfos{
-    display:flex;
-    justify-content: space-between;
-}
-.minipic{
-    background-color: #EEEEEE;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
+
 .bigpic:hover,.minipic:hover{
     background-color: #F7F7F7;
     transition: ease 0.3s;
 }
-
-.miniarticles{
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:4rem;
+.newsletterbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    background-color:#F7F7F7;
 }
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+input{
+    border: 1px #848484 solid;
+    padding: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+input[type=submit]{
+    border-radius: 5px;
+    background-color: #323A45;
+    color: white;
+    font-weight: 700;
+    font-size:2rem;
+    letter-spacing: 0.4rem;
+}
+input[type=submit]:hover{
+    border-radius: 5px;
+    background-color: #848484;
+    transition: ease 0.4s;
+}
+
+
 footer{
     display:grid;
     grid-template-columns: repeat(4, 1fr);

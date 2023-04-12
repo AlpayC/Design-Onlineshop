@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Onlineshop</title>
+    <link rel="stylesheet" href="../css/newsletter.css">
+    <script>
+        function sConsole(event) {
+  event.preventDefault();
+  var data1 = document.getElementById("data");
+  var data2 = document.getElementById("mail");
+  console.log(data1.value);
+  console.log(data2.value);
+}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navlogo">
+            <h1>THE DESIGN SHOP</h1>
+            <nav>
+                <a href="#">Weekly Recommendations</a>
+                <a href="#">Contact</a>
+                <a href="#">T D B</a>
+                <section class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="newsletterbox">
+        <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+        <p>Subscribe to reveive our offers in preview and enjoy 10% discount on your first Order.</p>
+        <form action="" id="form" onsubmit="sConsole(event)" class="kontaktformular">
+            <div>
+                <input required placeholder="Your Name"type="name" name="data" id="data">
+                <input required placeholder="Your Email" type="email" name="data" id="mail">
+            </div>
+            <input type="submit" value="SUBSCRIBE">
+        </form>
+    </section>
+    </main>
+    <footer>
+        <section class="txt">
+            <h4>The Design Shop</h4>
+            <p>Carefully curated online design store, founded and designed by <a href="">Ruby Bacanovic</a>.</span></p>
+        </section>
+        <section class="contact">
+            <h4>Contact</h4>
+            <a href="">Email us</a>
+            <a href="">Work with us</a>
+        </section>
+        <section class="Newsletter">
+            <h4>Newsletter</h4>
+            <a href="">Click here to <span>subscribe</span></a>
+            <p class="italicdontworry" >Don't worry. We hate spam too.</p>
+        </section>
+
+        <section class="findus">
+            <h4>Find Us Here</h4>
+            <a href="">Facebook</a>
+            <a href="">Instagram</a>
+            <a href="">Twitter</a>
+        </section>
+        <p class="copyright">© 2019 The Design Shop <span> •  </span> The Design Blog</p>
+    </footer>
+</body>
+</html>
